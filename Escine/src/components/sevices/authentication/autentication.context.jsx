@@ -13,11 +13,6 @@ export const AuthenticationContextProvider = ({ children }) => {
         setUserData(null);
     };
 
-    // Verificamos que handleLogout esté definido antes de pasarlo al contexto
-    if (!handleLogout) {
-        throw new Error("handleLogout no está definido en AuthenticationContextProvider");
-    }
-
     return (
         <AuthenticationContext.Provider value={{ userData, handleLogin, handleLogout }}>
             {children}

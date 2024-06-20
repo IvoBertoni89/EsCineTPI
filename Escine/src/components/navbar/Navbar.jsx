@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
-import { AuthenticationContext } from '../sevices/authentication/autentication.context'; // Asegúrate de ajustar la ruta de importación según tu estructura
+import { AuthenticationContext } from '../sevices/authentication/autentication.context'; // Ajusta la ruta según tu estructura
 import { HashLink } from 'react-router-hash-link';
 
 function NavbarComponent() {

@@ -1,8 +1,7 @@
 // App.js
-
 import React from 'react';
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
-import { AuthenticationContextProvider } from './components/sevices/authentication/autentication.context'; // Asegúrate de ajustar la ruta de importación según tu estructura
+import { AuthenticationContextProvider } from './components/sevices/authentication/autentication.context'; // Ajusta la ruta según tu estructura
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -30,13 +29,13 @@ function App() {
     ]);
 
     return (
-        <RouterProvider router={router}>
-            <AuthenticationContextProvider>
+        <AuthenticationContextProvider>
+            <RouterProvider router={router}>
                 <div className="App">
                     {/* Aquí va el contenido de tu aplicación */}
                 </div>
-            </AuthenticationContextProvider>
-        </RouterProvider>
+            </RouterProvider>
+        </AuthenticationContextProvider>
     );
 }
 
